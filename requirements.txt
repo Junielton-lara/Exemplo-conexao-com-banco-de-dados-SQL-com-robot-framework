@@ -1,0 +1,7 @@
+# To install the below mentioned libraries in one step, execute this command in the project root directory: 
+# pip install -r requirements.txt
+
+robotframework
+robotframework-databaselibrary
+robotframework-difflibrary
+pyodbc
