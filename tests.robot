@@ -36,9 +36,10 @@ Dado que acesso ao banco de dados QA
 
 Quando realizo uma consula na tb "cidade"
 
-     ${result_consulta} =   Execute Sql String    select *from cidade
-     Log To Console    ${result_consulta}
-     ${result}     Convert To String    ${result_consulta}
+    ${result_consulta}    Query    select *from ${tabela}
+    Log   ${result_consulta}
+    Log To Console   :
+    Log To Console   consulta:${result_consulta}
 
 
  E realizo um insert de dados na tb "cidade"
